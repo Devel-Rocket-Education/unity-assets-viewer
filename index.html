@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>유니티 에셋 목록 - 직업훈련 교육자료</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #5b3fdf;
+      --primary-dark: #4330b5;
+      --accent: #00bcd4;
+      --bg: #0f0f1a;
+      --surface: #1a1a2e;
+      --surface2: #252540;
+      --border: #333360;
+      --text: #e8e8f0;
+      --text-muted: #8888a8;
+      --tag-bg: #2a2a4a;
+      --free-color: #4caf50;
+      --paid-color: #ff9800;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Malgun Gothic', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1a3e 0%, #0f0f2a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .logo {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; flex-shrink: 0;
+    }
+    .header-text h1 {
+      font-size: 1.3rem; font-weight: 700; color: #fff;
+      letter-spacing: -0.3px;
+    }
+    .header-text p { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+    .header-badge {
+      margin-left: auto;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.72rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Main layout ── */
+    .container { max-width: 1400px; margin: 0 auto; padding: 32px 24px; }
+
+    /* ── Controls ── */
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 240px;
+    }
+    .search-wrap svg {
+      position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+      color: var(--text-muted); pointer-events: none;
+    }
+    #searchInput {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 0.9rem;
+      padding: 11px 16px 11px 44px;
+      outline: none;
+      transition: border-color .2s;
+    }
+    #searchInput:focus { border-color: var(--primary); }
+    #searchInput::placeholder { color: var(--text-muted); }
+
+    .sort-select {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 0.85rem;
+      padding: 11px 14px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* ── Page size tabs ── */
+    .page-size-tabs {
+      display: flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .ps-btn {
+      background: none;
+      border: none;
+      border-right: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding: 11px 18px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .ps-btn:last-child { border-right: none; }
+    .ps-btn:hover { color: var(--text); background: var(--surface2); }
+    .ps-btn.active { background: var(--primary); color: #fff; font-weight: 700; }
+
+    /* ── Pagination ── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+    .pg-btn {
+      min-width: 38px; height: 38px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex; align-items: center; justify-content: center;
+      padding: 0 12px;
+      white-space: nowrap;
+    }
+    .pg-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--text); }
+    .pg-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      font-weight: 700;
+    }
+    .pg-btn:disabled { opacity: .3; cursor: not-allowed; }
+    .pg-ellipsis { color: var(--text-muted); font-size: 0.85rem; padding: 0 4px; line-height: 38px; }
+    .pg-info {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding: 0 12px;
+      line-height: 38px;
+    }
+    .pg-info span { color: var(--text); font-weight: 600; }
+
+    /* ── Category tabs ── */
+    .cats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .cats.sub-cats {
+      margin-bottom: 24px;
+      padding: 10px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .cat-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      padding: 7px 16px;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex; align-items: center; gap: 6px;
+      white-space: nowrap;
+    }
+    .sub-cats .cat-btn {
+      background: var(--surface2);
+      font-size: 0.78rem;
+      padding: 5px 13px;
+    }
+    .cat-btn:hover { border-color: var(--primary); color: var(--text); }
+    .cat-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      font-weight: 600;
+    }
+    .cat-btn .count {
+      background: rgba(255,255,255,.2);
+      border-radius: 10px;
+      font-size: 0.72rem;
+      padding: 1px 7px;
+    }
+    .cat-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .stats-bar span { color: var(--text); font-weight: 600; }
+
+    /* ── Grid ── */
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 8px 32px rgba(91,63,223,.25);
+    }
+
+    .card-thumb {
+      height: 170px;
+      background: var(--surface2);
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 24px;
+    }
+
+    .card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+
+    .card-category {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.35;
+    }
+    .card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+    }
+    .price-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .price-free { background: rgba(76,175,80,.15); color: var(--free-color); }
+    .price-paid { background: rgba(255,152,0,.15); color: var(--paid-color); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; overflow: hidden; max-height: 66px; }
+    .tag {
+      font-size: 0.68rem;
+      background: var(--tag-bg);
+      color: var(--text-muted);
+      padding: 2px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .tag-more {
+      font-size: 0.68rem;
+      background: var(--surface2);
+      color: var(--text-muted);
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .rp-badges { display: flex; flex-wrap: wrap; gap: 4px; }
+    .rp-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: .3px;
+    }
+    .rp-builtin { background: rgba(136,136,168,.15); color: #aaaacc; }
+    .rp-urp     { background: rgba(0,188,212,.15);   color: #00bcd4; }
+    .rp-hdrp    { background: rgba(155,89,182,.15);  color: #bb7fdf; }
+
+    /* ── Empty state ── */
+    .empty {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+    .empty .empty-icon { font-size: 56px; margin-bottom: 16px; }
+    .empty h3 { color: var(--text); margin-bottom: 8px; }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.75);
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      width: 100%;
+      max-width: 680px;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: slideUp .25s ease;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-header {
+      aspect-ratio: 16 / 9;
+      background: var(--surface2);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .modal-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 24px;
+    }
+    .modal-header iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .carousel-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 36px; height: 36px;
+      background: rgba(0,0,0,.5);
+      border: none; border-radius: 50%;
+      color: #fff; font-size: 22px; line-height: 1;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
+      z-index: 2;
+    }
+    .carousel-btn:hover { background: rgba(255,255,255,.2); }
+    .carousel-btn:disabled { opacity: .25; cursor: default; }
+    .carousel-prev { left: 12px; }
+    .carousel-next { right: 12px; }
+    .carousel-counter {
+      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,.5);
+      color: #fff;
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .modal-close {
+      position: absolute; top: 16px; right: 16px;
+      width: 36px; height: 36px;
+      background: rgba(0,0,0,.5);
+      border: none; border-radius: 50%;
+      color: #fff; font-size: 18px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
+    }
+    .modal-close:hover { background: rgba(255,255,255,.2); }
+
+    .modal-body { padding: 24px; }
+    .modal-category {
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: .8px; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 8px;
+    }
+    .modal-title { font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .modal-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+
+    .modal-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .meta-item {
+      background: var(--surface2);
+      border-radius: 10px;
+      padding: 12px 16px;
+    }
+    .meta-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
+    .meta-value { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+
+    .modal-tags { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+    .modal-tags h4 { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .5px; }
+    .modal-tag {
+      background: var(--tag-bg);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+
+    .modal-features { margin-bottom: 16px; }
+    .modal-features h4 { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .feature-list li {
+      font-size: 0.85rem;
+      color: var(--text);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .feature-list li::before {
+      content: '✓';
+      position: absolute; left: 0;
+      color: var(--free-color);
+      font-weight: 700;
+    }
+
+    .modal-actions { display: flex; gap: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: all .2s;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      flex: 1;
+      justify-content: center;
+    }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-primary.disabled { opacity: .35; cursor: not-allowed; pointer-events: none; }
+    .btn-secondary {
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { border-color: var(--primary); }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    @media (max-width: 600px) {
+      header { padding: 16px; }
+      .modal-meta { grid-template-columns: 1fr; }
+      .modal-actions { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🎮</div>
+  <div class="header-text">
+    <h1>유니티 에셋 교육자료 목록</h1>
+    <p>게임개발 실습 리소스</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="controls">
+    <div class="search-wrap">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input id="searchInput" type="text" placeholder="에셋 이름, 제작사, 태그로 검색..." />
+    </div>
+    <select class="sort-select" id="sortSelect">
+      <option value="name-asc">이름 오름차순</option>
+      <option value="name-desc">이름 내림차순</option>
+      <option value="publisher-asc">제작사 오름차순</option>
+      <option value="publisher-desc">제작사 내림차순</option>
+      <option value="updated-asc">업데이트 일자 오름차순</option>
+      <option value="updated-desc">업데이트 일자 내림차순</option>
+    </select>
+    <div class="page-size-tabs" id="pageSizeTabs">
+      <button class="ps-btn active" data-size="25">25</button>
+      <button class="ps-btn" data-size="50">50</button>
+      <button class="ps-btn" data-size="100">100</button>
+    </div>
+  </div>
+
+  <div class="cats" id="mainCatBar"></div>
+  <div id="subCatWrap" style="display:none">
+    <div class="cats sub-cats" id="subCatBar"></div>
+  </div>
+  <div class="stats-bar" id="statsBar"></div>
+  <div id="grid"></div>
+  <div class="pagination" id="pagination"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <div class="modal-header" id="mHeader">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="mMedia" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;"></div>
+      <button class="carousel-btn carousel-prev" id="carouselPrev">&#8249;</button>
+      <button class="carousel-btn carousel-next" id="carouselNext">&#8250;</button>
+      <div class="carousel-counter" id="carouselCounter"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-category" id="mCategory"></div>
+      <div class="modal-title" id="mTitle"></div>
+      <div class="modal-desc" id="mDesc"></div>
+      <div class="modal-meta" id="mMeta"></div>
+      <div class="modal-features" id="mFeatures"></div>
+      <div class="modal-tags" id="mTags"></div>
+      <div class="modal-actions" id="mActions"></div>
+    </div>
+  </div>
+</div>
+
+<script src="unity-assets-data.js"></script>
+<script>
+// ── 유틸 ─────────────────────────────────────────────────────
+const RP_CLASS = { "Built-in": "rp-builtin", "URP": "rp-urp", "HDRP": "rp-hdrp" };
+const fmtRP = arr => arr.map(r => `<span class="rp-badge ${RP_CLASS[r]}">${r}</span>`).join("");
+
+function getYouTubeId(url) {
+  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);
+  return m ? m[1] : null;
+}
+const isYouTube = url => !!getYouTubeId(url);
+const ytThumb   = id  => `https://img.youtube.com/vi/${id}/mqdefault.jpg`;
+
+// ── 기본 이미지 ───────────────────────────────────────────────
+const DEFAULT_IMAGE = "https://unity-assetstorev2-prd.storage.googleapis.com/cdn-origin/assets/as/views/common/components/Logo/src/unity-assetstore-logo-2024.efb282090038049ebe0f4b442a7817bc.svg";
+
+const MAIN_CATS = Object.keys(CATEGORY_MAP);
+
+// ── 상태 ─────────────────────────────────────────────────────
+let activeMain = "전체";
+let activeSub  = "전체";
+let searchQuery = "";
+let sortMode = "name-asc";
+let currentPage = 1;
+let pageSize = 25;
+
+const grid        = document.getElementById("grid");
+const mainCatBar  = document.getElementById("mainCatBar");
+const subCatBar   = document.getElementById("subCatBar");
+const subCatWrap  = document.getElementById("subCatWrap");
+const statsBar    = document.getElementById("statsBar");
+const pagination  = document.getElementById("pagination");
+const searchInput = document.getElementById("searchInput");
+const sortSelect  = document.getElementById("sortSelect");
+
+// ── 카테고리 버튼 생성 ─────────────────────────────────────
+function buildCats() {
+  // 대분류
+  mainCatBar.innerHTML = "";
+  const allMainCount = ASSETS.length;
+  const mkMain = (label, count) => {
+    const btn = document.createElement("button");
+    btn.className = "cat-btn" + (label === activeMain ? " active" : "");
+    btn.innerHTML = `${label}<span class="count">${count}</span>`;
+    btn.addEventListener("click", () => {
+      activeMain = label;
+      activeSub  = "전체";
+      currentPage = 1;
+      buildCats();
+      renderGrid();
+    });
+    mainCatBar.appendChild(btn);
+  };
+
+  mkMain("전체", allMainCount);
+  MAIN_CATS.forEach(m => {
+    mkMain(m, ASSETS.filter(a => a.mainCategory === m).length);
+  });
+
+  // 소분류 (대분류가 선택된 경우만 표시)
+  if (activeMain === "전체") {
+    subCatWrap.style.display = "none";
+    return;
+  }
+  subCatWrap.style.display = "";
+  subCatBar.innerHTML = "";
+
+  const subs = CATEGORY_MAP[activeMain] || [];
+  const mkSub = (label, count) => {
+    const btn = document.createElement("button");
+    btn.className = "cat-btn" + (label === activeSub ? " active" : "");
+    btn.innerHTML = `${label}<span class="count">${count}</span>`;
+    btn.addEventListener("click", () => {
+      activeSub = label;
+      currentPage = 1;
+      buildCats();
+      renderGrid();
+    });
+    subCatBar.appendChild(btn);
+  };
+
+  mkSub("전체", ASSETS.filter(a => a.mainCategory === activeMain).length);
+  subs.forEach(s => {
+    mkSub(s, ASSETS.filter(a => a.mainCategory === activeMain && a.subCategory === s).length);
+  });
+}
+
+// ── 필터 + 정렬 ───────────────────────────────────────────────
+function getFiltered() {
+  const q = searchQuery.toLowerCase();
+  let list = ASSETS.filter(a => {
+    const matchMain   = activeMain === "전체" || a.mainCategory === activeMain;
+    const matchSub    = activeSub  === "전체" || a.subCategory  === activeSub;
+    const matchSearch = !q || a.name.toLowerCase().includes(q) || a.publisher.toLowerCase().includes(q) || a.tags.some(t => t.toLowerCase().includes(q));
+    return matchMain && matchSub && matchSearch;
+  });
+
+  if      (sortMode === "name-asc")       list.sort((a, b) => a.name.localeCompare(b.name, "ko"));
+  else if (sortMode === "name-desc")      list.sort((a, b) => b.name.localeCompare(a.name, "ko"));
+  else if (sortMode === "publisher-asc")  list.sort((a, b) => a.publisher.localeCompare(b.publisher, "ko"));
+  else if (sortMode === "publisher-desc") list.sort((a, b) => b.publisher.localeCompare(a.publisher, "ko"));
+  else if (sortMode === "updated-asc")    list.sort((a, b) => a.updatedAt.localeCompare(b.updatedAt));
+  else if (sortMode === "updated-desc")   list.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+
+  return list;
+}
+
+// ── 태그 너비 초과 시 말줄임 처리 ────────────────────────────
+function trimTagsToFit(card) {
+  const tagsEl = card.querySelector('.tags');
+  if (!tagsEl) return;
+  const tags = [...tagsEl.querySelectorAll('.tag')];
+  if (!tags.length || tagsEl.scrollHeight <= tagsEl.clientHeight) return;
+
+  const more = document.createElement('span');
+  more.className = 'tag-more';
+  more.textContent = '...';
+  tagsEl.appendChild(more);
+
+  while (tags.length > 0 && tagsEl.scrollHeight > tagsEl.clientHeight) {
+    tags.pop().remove();
+  }
+}
+
+// ── 카드 렌더링 ───────────────────────────────────────────────
+function renderGrid() {
+  const list = getFiltered();
+  const total = list.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  currentPage = Math.min(currentPage, totalPages);
+
+  const start = (currentPage - 1) * pageSize;
+  const end   = Math.min(start + pageSize, total);
+  const pageList = list.slice(start, end);
+
+  statsBar.innerHTML = total === 0
+    ? `에셋이 없습니다.`
+    : `총 <span>${total}</span>개 중 <span>${start + 1}–${end}</span>번 표시`;
+
+  grid.innerHTML = "";
+
+  if (total === 0) {
+    grid.innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">🔍</div>
+        <h3>검색 결과가 없습니다</h3>
+        <p>다른 키워드나 카테고리를 선택해 보세요.</p>
+      </div>`;
+    pagination.innerHTML = "";
+    return;
+  }
+
+  pageList.forEach(asset => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="card-thumb">
+        <img src="${(() => { const u = asset.images && asset.images[0]; if (!u) return DEFAULT_IMAGE; const id = getYouTubeId(u); return id ? ytThumb(id) : u; })()}" alt="${asset.name}" onerror="this.src='${DEFAULT_IMAGE}'" />
+      </div>
+      <div class="card-body">
+        <div class="card-category">${asset.mainCategory} &rsaquo; ${asset.subCategory}</div>
+        <div class="card-title">${asset.name}</div>
+        <div class="card-desc">${asset.desc}</div>
+        <div class="tags">${asset.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+        <div class="rp-badges">${fmtRP(asset.renderPipeline)}</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:.75rem;color:var(--text-muted)">${asset.unityVersion}+</span>
+        <span style="font-size:.75rem;color:var(--text-muted)">${asset.updatedAt}</span>
+      </div>`;
+    card.addEventListener("click", () => openModal(asset));
+    grid.appendChild(card);
+    trimTagsToFit(card);
+  });
+
+  renderPagination(totalPages);
+}
+
+// ── 페이지네이션 렌더링 ────────────────────────────────────────
+function renderPagination(totalPages) {
+  pagination.innerHTML = "";
+  if (totalPages <= 1) return;
+
+  const mkBtn = (label, page, disabled = false, active = false) => {
+    const btn = document.createElement("button");
+    btn.className = "pg-btn" + (active ? " active" : "");
+    btn.textContent = label;
+    btn.disabled = disabled;
+    if (!disabled && !active) {
+      btn.addEventListener("click", () => {
+        currentPage = page;
+        renderGrid();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    return btn;
+  };
+
+  const mkEllipsis = () => {
+    const s = document.createElement("span");
+    s.className = "pg-ellipsis";
+    s.textContent = "…";
+    return s;
+  };
+
+  // 이전 버튼
+  pagination.appendChild(mkBtn("← 이전", currentPage - 1, currentPage === 1));
+
+  // 페이지 번호 — 양끝 2개 + 현재 주변 2개 표시
+  const pages = new Set();
+  for (let i = 1; i <= Math.min(2, totalPages); i++) pages.add(i);
+  for (let i = Math.max(1, currentPage - 2); i <= Math.min(totalPages, currentPage + 2); i++) pages.add(i);
+  for (let i = Math.max(1, totalPages - 1); i <= totalPages; i++) pages.add(i);
+
+  const sorted = [...pages].sort((a, b) => a - b);
+  let prev = 0;
+  sorted.forEach(p => {
+    if (p - prev > 1) pagination.appendChild(mkEllipsis());
+    pagination.appendChild(mkBtn(p, p, false, p === currentPage));
+    prev = p;
+  });
+
+  // 페이지 정보
+  const info = document.createElement("span");
+  info.className = "pg-info";
+  info.innerHTML = `<span>${currentPage}</span> / <span>${totalPages}</span>`;
+  pagination.appendChild(info);
+
+  // 다음 버튼
+  pagination.appendChild(mkBtn("다음 →", currentPage + 1, currentPage === totalPages));
+}
+
+// ── 모달 ──────────────────────────────────────────────────────
+let carouselImages = [];
+let carouselIdx = 0;
+
+function setCarouselSlide(idx) {
+  const mMedia   = document.getElementById("mMedia");
+  const prev     = document.getElementById("carouselPrev");
+  const next     = document.getElementById("carouselNext");
+  const counter  = document.getElementById("carouselCounter");
+  carouselIdx = idx;
+  const url = carouselImages[idx];
+  const ytId = getYouTubeId(url);
+
+  if (ytId) {
+    mMedia.innerHTML = `<iframe
+      src="https://www.youtube.com/embed/${ytId}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>`;
+  } else {
+    mMedia.innerHTML = `<img src="${url}" alt="" style="width:100%;height:100%;object-fit:contain;padding:24px;"
+      onerror="this.src='${DEFAULT_IMAGE}'" />`;
+  }
+
+  prev.disabled = idx === 0;
+  next.disabled = idx === carouselImages.length - 1;
+  counter.textContent = carouselImages.length > 1 ? `${idx + 1} / ${carouselImages.length}` : "";
+  prev.style.display = carouselImages.length > 1 ? "" : "none";
+  next.style.display = carouselImages.length > 1 ? "" : "none";
+}
+
+document.getElementById("carouselPrev").addEventListener("click", e => {
+  e.stopPropagation();
+  if (carouselIdx > 0) setCarouselSlide(carouselIdx - 1);
+});
+document.getElementById("carouselNext").addEventListener("click", e => {
+  e.stopPropagation();
+  if (carouselIdx < carouselImages.length - 1) setCarouselSlide(carouselIdx + 1);
+});
+
+function openModal(asset) {
+  const overlay = document.getElementById("modalOverlay");
+  carouselImages = (asset.images && asset.images.length) ? asset.images : [DEFAULT_IMAGE];
+  setCarouselSlide(0);
+  document.getElementById("mCategory").textContent = `${asset.mainCategory} › ${asset.subCategory}`;
+  document.getElementById("mTitle").textContent = asset.name;
+  document.getElementById("mDesc").textContent = asset.desc;
+
+  document.getElementById("mMeta").innerHTML = `
+    <div class="meta-item">
+      <div class="meta-label">제작사</div>
+      <div class="meta-value">${asset.publisher}</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">지원 버전</div>
+      <div class="meta-value">${asset.unityVersion}+</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">패키지 버전</div>
+      <div class="meta-value">v${asset.packageVersion}</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">파일 크기</div>
+      <div class="meta-value">${asset.size}</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">렌더 파이프라인</div>
+      <div class="meta-value" style="margin-top:6px"><div class="rp-badges">${fmtRP(asset.renderPipeline)}</div></div>
+    </div>
+        <div class="meta-item">
+      <div class="meta-label">업데이트 일자</div>
+      <div class="meta-value">${asset.updatedAt}</div>
+    </div>`;
+
+  document.getElementById("mFeatures").innerHTML = `
+    <h4>주요 구성</h4>
+    <ul class="feature-list">
+      ${asset.features.map(f => `<li>${f}</li>`).join("")}
+    </ul>`;
+
+  document.getElementById("mTags").innerHTML = `
+    <h4>태그</h4>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
+      ${asset.tags.map(t => `<span class="modal-tag">${t}</span>`).join("")}
+    </div>`;
+
+  const hasLink = asset.link && asset.link !== "#";
+  document.getElementById("mActions").innerHTML = hasLink
+    ? `<a class="btn btn-primary" href="${asset.link}" target="_blank" rel="noopener">상세보기</a>`
+    : `<span class="btn btn-primary disabled">상세보기</span>`;
+
+  overlay.classList.add("open");
+}
+
+function closeModal() {
+  document.getElementById("mMedia").innerHTML = "";
+  document.getElementById("modalOverlay").classList.remove("open");
+}
+
+// ── 이벤트 ───────────────────────────────────────────────────
+document.getElementById("modalClose").addEventListener("click", closeModal);
+document.getElementById("modalOverlay").addEventListener("click", e => {
+  if (e.target === e.currentTarget) closeModal();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+searchInput.addEventListener("input", e => {
+  searchQuery = e.target.value;
+  currentPage = 1;
+  buildCats();
+  renderGrid();
+});
+sortSelect.addEventListener("change", e => {
+  sortMode = e.target.value;
+  currentPage = 1;
+  renderGrid();
+});
+
+// 페이지 크기 탭
+document.getElementById("pageSizeTabs").addEventListener("click", e => {
+  const btn = e.target.closest(".ps-btn");
+  if (!btn) return;
+  document.querySelectorAll(".ps-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  pageSize = parseInt(btn.dataset.size, 10);
+  currentPage = 1;
+  renderGrid();
+});
+
+// ── 초기 실행 ─────────────────────────────────────────────────
+buildCats();
+renderGrid();
+</script>
+</body>
+</html>
