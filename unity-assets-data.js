@@ -32,6 +32,607 @@ const CATEGORY_MAP = {
 
 const ASSETS = [
   {
+    "mainCategory": "시각 효과",
+    "subCategory": "파티클",
+    "name": "AAA Projectiles Vol.2",
+    "desc": "고품질 발사체 VFX 모음 2탄. 25종의 발사체와 각각의 히트·플래시 이펙트를 포함하며 Built-in·URP·HDRP와 PC/콘솔/모바일/VR을 지원합니다.",
+    "packageVersion": "2.2",
+    "unityVersion": "2020.3.18",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "39.6 MB",
+    "publisher": "Hovl Studio",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/6d790ee2-a62c-4366-b3f0-d29d433502b4.webp",
+      "https://youtu.be/gsaQKjYLMhA",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/ce253cf1-2ebb-4a9f-9c86-d4827f4bc9b1.webp",
+      "https://youtu.be/7l_DrExirCQ",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/836c0620-d2b7-404c-a89b-908827c9bf36.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2261dd21-a418-4aa1-8f44-5912d953218f.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4618c414-3c89-4ee5-aa51-6f04768a9f06.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/72938ac3-10da-428b-8fc6-ca2c50ca4438.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1c559085-4f7a-4694-b0e7-9aac4c503654.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/26a6bf1e-dda5-4b16-bf6a-ff1a8dd97e74.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f5fd06a8-89fd-42d0-b92d-b85f0d0badf7.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/166b73a6-dc52-423c-97e4-8149d1f9158a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/81fec1c0-f8c5-4e15-86ca-a4e60b28af3a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a66d17c2-91ee-4101-a29a-279b62b98281.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a92afe07-9da3-4447-8a7c-ad326a674904.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a89fb1ad-9bca-4c35-8915-05c45de64d4f.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1a1cbab9-4a29-4926-b546-fcbfb16f1348.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/204930a6-6b3c-415e-9d98-19057b92f8c1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8a2f6e91-682f-4262-bc40-249cc25ae688.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/49131502-6841-4a4a-a911-def8f728bab2.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/397f856f-dd75-4ae7-a302-18d6f76b3167.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/6d5549ab-128c-4029-9022-886d9d66e6a7.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/75d19b7e-37d5-479b-8fc0-82e1bdea41be.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/cf8bda70-ab62-42a0-8975-4ade5bfab143.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7b0d06ed-b00b-4ca2-ba2d-da8feb92c883.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/9701fb9f-a8de-49ea-82ce-4d1033597185.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/94d7cb64-77a6-40ea-956b-5085452f9a5a.webp"
+    ],
+    "tags": [
+      "Shoot",
+      "projectile",
+      "Magic",
+      "Effects",
+      "AAA",
+      "hits",
+      "Projectiles",
+      "firework",
+      "Realistic",
+      "Stylized",
+      "Bullet",
+      "particles",
+      "VFX",
+      "hit"
+    ],
+    "features": [
+      "25개의 고품질 발사체 이펙트",
+      "25개의 고유한 히트 이펙트 및 25개의 플래시 이펙트",
+      "데모 씬용 슈팅 스크립트 포함",
+      "Built-in / URP / HDRP 지원, PC·콘솔·모바일·VR 호환"
+    ],
+    "updatedAt": "2026-06-21",
+    "link": "https://assetstore.unity.com/packages/vfx/particles/spells/aaa-projectiles-vol-2-144288"
+  },
+
+  {
+    "mainCategory": "음향",
+    "subCategory": "음악",
+    "name": "Casual Game Music Pack 4 [Fantasy]",
+    "desc": "판타지 세계 탐험에 어울리는 평화롭고 신비로운 분위기의 캐주얼 게임 배경음악 팩. 하프·신전·요정 테마의 루프 음원과 다양한 변형 트랙을 포함합니다.",
+    "packageVersion": "1.0",
+    "unityVersion": "5.3.2",
+    "renderPipeline": [],
+    "size": "199.3 MB",
+    "publisher": "WOW Sound",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/f436a878-f84c-4b7d-b975-a1a819cdebbe.webp",
+      "https://youtu.be/cNs8vkvXS9w"
+    ],
+    "tags": [
+      "mysterious",
+      "enchant",
+      "tranquil",
+      "Dream",
+      "beautiful",
+      "Harp",
+      "shrine",
+      "Adventure",
+      "Forest",
+      "Garden",
+      "peaceful",
+      "magical",
+      "fairy",
+      "fairytale",
+      "Fantasy"
+    ],
+    "features": [
+      "판타지 테마 캐주얼 게임용 배경음악 모음",
+      "Ancient Shrine, Fairy Harp, Lake of Dreams, Moon Forest, Sail to the Stars 등 메인 트랙 수록",
+      "각 트랙별 Full / Lite / Short / Loop 변형 버전 제공",
+      "AI 사운드 미사용, 루프 재생에 최적화된 음원"
+    ],
+    "updatedAt": "2019-01-22",
+    "link": "https://assetstore.unity.com/packages/audio/music/casual-game-music-pack-4-fantasy-137226"
+  },
+
+  {
+    "mainCategory": "시각 효과",
+    "subCategory": "파티클",
+    "name": "Epic Toon VFX 3",
+    "desc": "AAA 게임에 바로 사용 가능한 카툰 스타일 VFX 팩 3탄. 10종의 게임 레디 툰 이펙트를 포함하며 Built-in·URP·HDRP를 모두 지원합니다.",
+    "packageVersion": "2.0",
+    "unityVersion": "2020.3.18",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "27.4 MB",
+    "publisher": "Hovl Studio",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/eb9a1c98-c544-49a6-a18e-d1a9da4eba3c.webp",
+      "https://youtu.be/qzvHjqAvVIw",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/e11fd482-965f-458a-9397-4184b7d76c40.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/62c8769c-032c-49fb-93a5-e3c76f0e97bd.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/17bf7dea-1171-44f5-901c-b0904ea008ec.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/faab954e-eeba-4edb-ac46-c57e1b2db7da.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/484e281c-c479-48dc-9ecc-98be8006ddbd.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7adcb41f-ba68-4213-ad9a-854b11675abe.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/93487a10-fe99-4a07-900d-865f746f7c62.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a0c4f996-495e-4ca6-9c81-64b614a28097.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/e971585d-3b87-4721-8296-50bcc4d72efb.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/41a35be3-418a-4ce1-903e-a8d0af07a5e1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b3cec7f0-315b-4770-b7b2-1bf95ef9c3be.webp"
+    ],
+    "tags": [
+      "Magic",
+      "Explosion",
+      "AAA",
+      "unique",
+      "Toon",
+      "Spell",
+      "skill",
+      "Cartoon",
+      "meteors",
+      "aura",
+      "Epic",
+      "VFX"
+    ],
+    "features": [
+      "10종의 게임 레디 카툰 스타일 이펙트",
+      "프리팹을 드래그&드롭으로 바로 사용 가능",
+      "Built-in / URP / HDRP 지원 (BiRP는 Shader Graph 자동 설치)",
+      "모든 플랫폼 호환"
+    ],
+    "updatedAt": "2026-02-18",
+    "link": "https://assetstore.unity.com/packages/vfx/particles/spells/epic-toon-vfx-3-173759"
+  },
+
+  {
+    "mainCategory": "2D",
+    "subCategory": "GUI",
+    "name": "Flat Minimalist GUI / UI pack - over 600 PNG!",
+    "desc": "600개 이상의 PNG로 구성된 플랫·미니멀 스타일 GUI 팩. 시작/설정/상점/인벤토리/퀘스트 등 게임 UI 요소와 버튼·아이콘·바를 다양한 사이즈로 제공하며 PSD·AI 편집 파일을 포함합니다.",
+    "packageVersion": "1.1",
+    "unityVersion": "2018.3.8",
+    "renderPipeline": [],
+    "size": "7.6 MB",
+    "publisher": "HONETi",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/e6d5fd74-7f2b-43c3-aba5-27cb1993a488.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/5216b91f-6305-4a17-a033-282501e3d13f.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/358ecfc3-5bc7-4ff8-9285-0cfb8ac0d71a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/63406f20-c886-4a26-ae0c-1f4636cf318b.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/61af2a16-4dfa-4700-82c1-bffa5107e6cf.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/156b843f-9d66-4e88-8d85-fc2a9e71bc93.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/30035d59-c47d-4cbc-9568-bf4dda6a88a1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/d2de6bc3-5f85-4a72-a427-8c6ce03f9c38.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/dec9e113-f5c7-47ea-837b-3e52c7062b5f.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8964b8d1-973a-4344-93cd-dcbbbcb4e27c.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4a1ac73f-3ec9-4016-8933-5460be665f55.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4518ff4d-c003-4887-9c59-d8af8fa28a5d.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/fd85d272-2889-4256-bed2-7b8e82cb214a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/0b0bd457-6318-4e55-950b-83d3bcc41160.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/765fba3e-ffa2-476e-8a2e-f27be60913f6.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f70795be-7f9a-462a-9549-df85c277757f.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f0f4104c-dece-4347-8a27-725a3e3c3491.webp"
+    ],
+    "tags": [
+      "flat gui",
+      "GUI",
+      "user interface"
+    ],
+    "features": [
+      "600개 이상의 PNG 그래픽 (플랫·미니멀 스타일)",
+      "시작/일시정지/로그인/설정/상점/인벤토리/퀘스트/메시지·채팅 등 UI 화면 구성",
+      "112개 고유 아이템·아이콘을 5가지 사이즈(32~512px)로 제공",
+      "커스터마이즈 가능한 버튼, 체크박스, 체력·마나 버블, 경험치·진행 바, 슬라이더 등",
+      "편집 가능한 .psd 및 .ai 파일 포함"
+    ],
+    "updatedAt": "2020-10-30",
+    "link": "https://assetstore.unity.com/packages/2d/gui/flat-minimalist-gui-ui-pack-over-600-png-146895"
+  },
+
+  {
+    "mainCategory": "3D",
+    "subCategory": "애니메이션",
+    "name": "Human Archer Animations",
+    "desc": "활을 사용하는 궁수 캐릭터용 휴머노이드 애니메이션 팩. 발사·조준·패링·피격 등 전투 동작과 활·활시위를 제어하는 기본 스크립트를 포함하며 Mecanim 리타게팅을 지원합니다.",
+    "packageVersion": "2.0",
+    "unityVersion": "6000.0.59",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "38.8 MB",
+    "publisher": "Kevin Iglesias",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/5c5dfd5f-985c-4d5e-bb95-b444a5d88ab7.webp",
+      "https://youtu.be/ksxBckObV2k",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/891b968f-4dd3-4edd-b37c-f98c32308b03.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/bcc7b380-dcef-406d-a4cc-cba6d4a54e09.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/37f6af10-47f4-4d1b-85bf-dc88e145f59c.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1563d04a-8d4e-4563-845b-3c086189fb99.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7a01fee8-5146-4fc8-b896-5c917165ce2c.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8d5ba694-4bb5-46d2-acde-fa3357d43a08.webp"
+    ],
+    "tags": [
+      "Arrow",
+      "shot",
+      "ranger",
+      "humanoid",
+      "Bow",
+      "archer",
+      "Mask",
+      "layer",
+      "bowman",
+      "avatar",
+      "bowstring",
+      "quiver"
+    ],
+    "features": [
+      "활을 사용하는 궁수 캐릭터용 애니메이션 모음",
+      "발사, 조준, 패링, 피격, 사망 등 전투 동작 포함",
+      "함정 설치 등 추가 동작 제공",
+      "활·활시위 애니메이션용 기본 스크립트 포함, Mecanim 리타게팅 지원"
+    ],
+    "updatedAt": "2025-11-25",
+    "link": "https://assetstore.unity.com/packages/3d/animations/human-archer-animations-182939"
+  },
+
+  {
+    "mainCategory": "3D",
+    "subCategory": "애니메이션",
+    "name": "Human Basic Motions",
+    "desc": "휴머노이드 캐릭터용 기본 로코모션 애니메이션 팩. 대기·걷기·달리기·점프·웅크리기·수영 등 핵심 동작을 8방향으로 제공하며 Mecanim 리타게팅을 지원합니다.",
+    "packageVersion": "2.5.1",
+    "unityVersion": "6000.0.59",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "51.3 MB",
+    "publisher": "Kevin Iglesias",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/ffa1cc8a-96f0-4bcc-b62b-d45b0d4891fd.webp",
+      "https://youtu.be/B7r3t1XgcSk",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/ad6cdff6-4f4f-4b84-bee7-8a533cc52e42.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7c363d04-dfc9-41f7-aadf-f8a43ff6aa0b.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/fcfb0bc9-c7b3-4531-8adc-8f0d3cde9f6e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/3a1b953f-1ade-49ec-bb64-0e528b02c327.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2fb682c3-acd3-49dc-b070-9e8fd0d2c643.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/216b28e5-744f-4f8a-994d-a32b5c361909.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/59b99828-0537-4811-ac7d-935c6051db02.webp"
+    ],
+    "tags": [
+      "animations",
+      "crouch",
+      "basic",
+      "swim",
+      "retargeting",
+      "Mecanim",
+      "jump",
+      "sprint",
+      "Idle",
+      "humanoid",
+      "run",
+      "walk",
+      "retargeting animations",
+      "sprinting"
+    ],
+    "features": [
+      "휴머노이드 캐릭터용 기본 로코모션 애니메이션 모음",
+      "대기(Idle), 점프, 떨어지기, 걷기(8방향), 달리기(8방향), 전력 질주(5방향) 포함",
+      "웅크리기, 수영 등 추가 동작 제공",
+      "다른 휴머노이드 3D 캐릭터로 리타게팅 가능 (Mecanim)"
+    ],
+    "updatedAt": "2026-04-30",
+    "link": "https://assetstore.unity.com/packages/3d/animations/human-basic-motions-157744"
+  },
+
+  {
+    "mainCategory": "3D",
+    "subCategory": "애니메이션",
+    "name": "Human Melee Animations",
+    "desc": "한 손 무기(단검·검·곤봉 등)를 사용한 근접 전투 애니메이션 팩. 공격·콤보·피격 동작을 휴머노이드 캐릭터용으로 제공하며 Mecanim 리타게팅을 지원합니다.",
+    "packageVersion": "2.1",
+    "unityVersion": "6000.0.59",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "37.1 MB",
+    "publisher": "Kevin Iglesias",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/62fe758a-6b0f-4ef2-b14f-023e83990984.webp",
+      "https://youtu.be/yVVvo1iNrYU",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8592b067-4363-4967-92ee-75f3f0551e8d.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/af958a58-7958-4b8f-aff6-0264bf48dfe1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/5e385bfa-26ec-478e-8b79-af76eeceefc1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/ef4f81dd-c065-49b3-b3d8-1100d9cd5dda.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/c60070a9-b7b7-406e-a4f9-bcbef364cef0.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/df8ab339-164d-41c0-bca1-2c6282781255.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f070721f-0f3c-4322-a8bf-a91c1e4c8baf.webp"
+    ],
+    "tags": [
+      "Real time strategy",
+      "fighter",
+      "brawler",
+      "humanoid",
+      "Mecanim",
+      "retargeting animations",
+      "RTS",
+      "melee warriors"
+    ],
+    "features": [
+      "한 손 무기를 이용한 근접 전투 애니메이션 모음",
+      "단검, 검, 곤봉 등 무기 전투 동작 포함",
+      "공격, 콤보, 피격 등 전투 애니메이션 제공",
+      "휴머노이드 캐릭터로 리타게팅 가능 (Mecanim)"
+    ],
+    "updatedAt": "2026-06-19",
+    "link": "https://assetstore.unity.com/packages/3d/animations/human-melee-animations-151650"
+  },
+
+  {
+    "mainCategory": "3D",
+    "subCategory": "애니메이션",
+    "name": "Human Spellcasting Animations",
+    "desc": "마법 시전 동작을 담은 휴머노이드 애니메이션 팩. 불·얼음·치유·폭발 등 다양한 캐스팅 스타일과 한 손/양손, 차징 동작을 제공하며 Mecanim 리타게팅을 지원합니다.",
+    "packageVersion": "2.0",
+    "unityVersion": "6000.0.59",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "46.5 MB",
+    "publisher": "Kevin Iglesias",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/f5aee041-7ed2-494d-84ce-00fd2e7aef50.webp",
+      "https://youtu.be/pmof6M_MOXs",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/e2d40135-f358-455e-b20d-811621f2c493.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a78a8fbc-4d1d-40e6-b2e5-2c8614863fa0.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2aded882-be82-407a-9f00-89713c6bb7e6.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/c34775a4-d218-4dd2-b313-bc0f8b33597e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/78b5ff12-2661-4280-ad79-3df05eb88d8b.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7621f7cd-5962-478b-9f40-f293bc58882e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/224ea26d-60cc-4b97-abe7-73d8a6943f73.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/d03cc95c-b7b2-43f8-b751-7825feb1006b.webp"
+    ],
+    "tags": [
+      "particles",
+      "VFX",
+      "Magic",
+      "fireball",
+      "witch",
+      "sorcerer",
+      "mage",
+      "mmorpg",
+      "Animation",
+      "caster",
+      "Mecanim",
+      "RTS",
+      "Spell",
+      "wizard"
+    ],
+    "features": [
+      "다양한 마법 시전 애니메이션 모음",
+      "불, 얼음, 치유, 폭발 등 여러 캐스팅 스타일 지원",
+      "한 손/양손 캐스팅 및 차징 동작 포함",
+      "휴머노이드 캐릭터로 리타게팅 가능 (Mecanim)"
+    ],
+    "updatedAt": "2025-11-25",
+    "link": "https://assetstore.unity.com/packages/3d/animations/human-spellcasting-animations-156596"
+  },
+
+  {
+    "mainCategory": "3D",
+    "subCategory": "캐릭터",
+    "name": "Low Poly Monster Bundle 1 - 20 Character Packs! - Fantasy RPG",
+    "desc": "20개의 로우폴리 몬스터 캐릭터 팩을 하나로 묶은 판타지 RPG용 번들. 커스터마이즈·모듈식 크리처들을 다량 포함하며 던전·판타지 게임에 적합합니다.",
+    "packageVersion": "4.4.1",
+    "unityVersion": "6000.0.71",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "302.4 MB",
+    "publisher": "Magic Pig Games / Infinity PBR",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/997c928e-cc31-4fe4-9af9-1e36ec13caef.webp",
+      "https://youtu.be/lbUVZQgfREE",
+      "https://youtu.be/ruT6eZpdFlo",
+      "https://youtu.be/kOuaRL_KBcQ",
+      "https://youtu.be/9M65Vz1jEtk",
+      "https://youtu.be/ZDOwu49YDc0",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/9bd8bdfd-4c21-42ad-ba85-2524401abcdd.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2bc39edf-6f13-4fe6-affb-f4eae26a0983.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b5b5a82f-a4e4-4a59-a91d-7d43cd0dd290.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/36ab7ade-7e30-4ffb-a1ed-26865d96b26b.webp",
+      "https://youtu.be/7G9pSQMInmo",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4698aaad-9500-4dcf-a0b0-bdbe21435ac7.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/0d727626-eb9d-4d12-a6c8-51ee64d7998b.webp",
+      "https://youtu.be/KaqhsPvXhbg",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8e42a824-0dbe-4049-86a4-eb65179d4c47.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b8455062-0799-44fa-ac33-4b4a7a68511f.webp",
+      "https://youtu.be/2f0AoMfs454",
+      "https://youtu.be/O73cMIN5Lb8",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/6d7dec39-1762-4846-a149-cb3037a6dc50.webp",
+      "https://youtu.be/hmGuzRMAkf8",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/535029f9-5bf9-4f18-b759-627fc77984a0.webp",
+      "https://youtu.be/cYCck7dC04I",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/911eeb57-ea6e-4852-9ec5-d3f1b973e18d.webp",
+      "https://youtu.be/36BIp_KKGio",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/58835f61-3b45-445b-aa87-3067ca3611d4.webp",
+      "https://youtu.be/CXzTEAkSkXE",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b6a28363-fb75-4ce8-b2dc-9aa98c824f9c.webp",
+      "https://youtu.be/lKngMC4h_5w",
+      "https://youtu.be/9f1t-drEmvo",
+      "https://youtu.be/rFlylfPFgKI",
+      "https://youtu.be/Lla_3kjoXhU",
+      "https://youtu.be/Ggix6hAeHqw",
+      "https://youtu.be/PIZOgZp1LpU",
+      "https://youtu.be/6Q_DSSXS5K0",
+      "https://youtu.be/RLpnEzJzDKY",
+      "https://youtu.be/WXljLxaVHH8"
+    ],
+    "tags": [
+      "Characters",
+      "Character",
+      "dungeon",
+      "Fantasy",
+      "Creature",
+      "Monster",
+      "Customizable",
+      "Modular",
+      "synty",
+      "Low Poly",
+      "lowpoly",
+      "Creepy",
+      "faceted",
+      "bundle"
+    ],
+    "features": [
+      "20개의 로우폴리 몬스터 캐릭터 팩을 포함한 번들",
+      "판타지 RPG·던전 게임용 다양한 크리처 모델",
+      "커스터마이즈 가능한 모듈식 캐릭터 구성",
+      "번들 구매 후 각 개별 패키지를 무료로 다운로드 가능",
+      "URP·HDRP 지원 (구버전 Unity에서 Built-in 호환)"
+    ],
+    "updatedAt": "2026-06-15",
+    "link": "https://assetstore.unity.com/packages/3d/characters/creatures/low-poly-monster-bundle-1-20-character-packs-fantasy-rpg-175671"
+  },
+
+  {
+    "mainCategory": "3D",
+    "subCategory": "캐릭터",
+    "name": "Monsters Forest Pack",
+    "desc": "숲 테마의 귀여운 몬스터·정령 캐릭터 팩. 식물·곤충·요정 등 다양한 생물 모델을 포함하며 Built-in·URP·HDRP를 모두 지원해 캐주얼 RPG에 적합합니다.",
+    "packageVersion": "3.2",
+    "unityVersion": "2019.4.21",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "30.9 MB",
+    "publisher": "SURIYUN",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/d34ed04e-c6d9-44ee-94cf-2424ad8cc242.webp",
+      "https://youtu.be/CLqy0X3vkT8",
+      "https://youtu.be/TCTOSFyLfAg",
+      "https://youtu.be/psWUFTr4JEg",
+      "https://youtu.be/kDTrEnSDFG8",
+      "https://youtu.be/m9XfNuf7UGg",
+      "https://youtu.be/V1py1QX068Q",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/dad069ee-ac91-4b85-bd69-bd6da6e4aa6a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/eeb49183-a99b-482e-a8f2-e8f94e1cec16.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/c58ca5bb-97db-4569-8892-fd07d8aa6714.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/3ca3414d-8410-4f98-b109-b0e9df31b82e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/c606d278-966b-4e36-b1d6-e588743c4ea9.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/3da7a0ad-808f-4313-938c-fd7e9fe8072c.webp"
+    ],
+    "tags": [
+      "queen",
+      "insect",
+      "butterfly",
+      "Plant",
+      "potato",
+      "Onion",
+      "flower",
+      "Vegetable",
+      "Bunny",
+      "Bee",
+      "rabbit",
+      "turnip",
+      "spirit",
+      "Dryad",
+      "Forest"
+    ],
+    "features": [
+      "숲 테마의 몬스터/정령 캐릭터 컬렉션",
+      "식물, 곤충, 요정, 채소 등 다양한 생물 모델 포함",
+      "휴머노이드 애니메이션 및 PBR 텍스처 지원",
+      "Built-in / URP / HDRP 렌더 파이프라인 호환"
+    ],
+    "updatedAt": "2025-12-15",
+    "link": "https://assetstore.unity.com/packages/3d/characters/creatures/monsters-forest-pack-167364"
+  },
+
+  {
+    "mainCategory": "시각 효과",
+    "subCategory": "파티클",
+    "name": "Wizard spells pack",
+    "desc": "마법사용 고품질 주문 VFX 팩. 메인·캐스팅 이펙트를 포함한 14종의 완성형 주문과 전용 아이콘·SFX, 판타지 스태프 에셋을 제공하며 Built-in·URP·HDRP를 지원합니다.",
+    "packageVersion": "2.1",
+    "unityVersion": "2020.3.18",
+    "renderPipeline": [
+      "Built-in",
+      "URP",
+      "HDRP"
+    ],
+    "size": "94.9 MB",
+    "publisher": "Hovl Studio",
+    "images": [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/9a12a525-7385-4abf-9f42-6a7558a66f99.webp",
+      "https://youtu.be/5-L3UwKq1Ps",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a8b61bbc-eabf-4579-b80c-16242891e9ea.webp",
+      "https://youtu.be/_yu3y1N_QlY",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1f6862dc-2d4f-4911-9144-cfeabdea1c52.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/9b6d8236-4ab0-4d9c-8762-f910bbaa63f9.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7eceb369-15e1-4e10-8a91-f6e0aa9a1872.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/49839d66-7c42-4f5d-a09f-22633881bfcb.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4bdf28bf-885f-40d5-9ff7-ca57fad40f2a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b46eab9d-2b7c-4924-a942-cf09ca241a9e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/bcb29641-1b63-4b24-bf55-8078099d4971.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f98ff8e2-2da3-46aa-b1a6-4b3f884c2883.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/c9b04f34-c1c1-4b4f-bd2a-f7e44b312772.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/006e0517-b00e-4c98-94b1-7ce0f92c5c85.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8fc33245-d2b9-4968-b619-676da70d300c.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/41d3858c-7d62-4b92-a40e-8413fdab39f8.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b5293993-63f3-4bab-964d-6e9db7712067.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/c29acc91-d05c-4d41-b7ae-c205bf5a12eb.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/5e2a954b-0e26-42ce-8646-226029419a65.webp"
+    ],
+    "tags": [
+      "skills",
+      "Magic",
+      "wizard",
+      "Effects",
+      "Spell",
+      "High quality",
+      "spells",
+      "electric",
+      "Realistic",
+      "mage",
+      "particles",
+      "RPG",
+      "Ice",
+      "VFX",
+      "Lightning"
+    ],
+    "features": [
+      "프리팹 31개 (메인·캐스팅 이펙트 포함 완성형 주문 14개, 스파이크·실드용 변형 포함)",
+      "에셋 전용 고유 아이콘 14개 및 UI 스프라이트 애니메이션 1개",
+      "고품질 SFX 15개 및 HQ PBR 판타지 스태프 에셋 포함",
+      "Built-in / URP / HDRP 지원, PC·콘솔·모바일·웹·VR 호환"
+    ],
+    "updatedAt": "2026-05-30",
+    "link": "https://assetstore.unity.com/packages/vfx/particles/spells/wizard-spells-pack-158864"
+  },
+
+  {
     mainCategory: "시각 효과",
     subCategory: "파티클",
     name: "Sword slashes PRO",
