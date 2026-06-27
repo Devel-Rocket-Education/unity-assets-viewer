@@ -551,8 +551,10 @@
       <option value="name-desc">이름 내림차순</option>
       <option value="publisher-asc">제작사 오름차순</option>
       <option value="publisher-desc">제작사 내림차순</option>
-      <option value="updated-asc">업데이트 일자 오름차순</option>
-      <option value="updated-desc">업데이트 일자 내림차순</option>
+      <option value="updated-desc" selected>업데이트 최신순</option>
+      <option value="updated-asc">업데이트 예전순</option>
+      <option value="size-desc">크기 내림차순</option>
+      <option value="size-asc">크기 오름차순</option>
     </select>
     <div class="page-size-tabs" id="pageSizeTabs">
       <button class="ps-btn active" data-size="25">25</button>
@@ -614,7 +616,7 @@ const MAIN_CATS = Object.keys(CATEGORY_MAP);
 let activeMain = "전체";
 let activeSub  = "전체";
 let searchQuery = "";
-let sortMode = "name-asc";
+let sortMode = "updated-desc";
 let currentPage = 1;
 let pageSize = 25;
 
@@ -689,12 +691,23 @@ function getFiltered() {
     return matchMain && matchSub && matchSearch;
   });
 
+  const parseSize = s => {
+    if (!s) return 0;
+    const [num, unit] = s.trim().split(" ");
+    const n = parseFloat(num);
+    if (unit === "KB") return n * 1024;
+    if (unit === "MB") return n * 1024 * 1024;
+    if (unit === "GB") return n * 1024 * 1024 * 1024;
+    return n;
+  };
   if      (sortMode === "name-asc")       list.sort((a, b) => a.name.localeCompare(b.name, "ko"));
   else if (sortMode === "name-desc")      list.sort((a, b) => b.name.localeCompare(a.name, "ko"));
   else if (sortMode === "publisher-asc")  list.sort((a, b) => a.publisher.localeCompare(b.publisher, "ko"));
   else if (sortMode === "publisher-desc") list.sort((a, b) => b.publisher.localeCompare(a.publisher, "ko"));
   else if (sortMode === "updated-asc")    list.sort((a, b) => a.updatedAt.localeCompare(b.updatedAt));
   else if (sortMode === "updated-desc")   list.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+  else if (sortMode === "size-desc")      list.sort((a, b) => parseSize(b.size) - parseSize(a.size));
+  else if (sortMode === "size-asc")       list.sort((a, b) => parseSize(a.size) - parseSize(b.size));
 
   return list;
 }
