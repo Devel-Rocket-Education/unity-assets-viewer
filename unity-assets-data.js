@@ -32,6 +32,26 @@ const CATEGORY_MAP = {
 
 const ASSETS = [
   {
+    mainCategory: "음향",
+    subCategory: "효과음",
+    name: "Kawaii UI",
+    desc: "귀엽고 아기자기한(카와이) 스타일의 UI 사운드 효과음 팩. 버튼 클릭·팝업·알림 등 아기자기한 인터페이스 사운드를 제공해 캐주얼·힐링 게임의 UI에 활용할 수 있다.",
+    packageVersion: "1.0",
+    unityVersion: "2021.3.18",
+    renderPipeline: [],
+    size: "62.2 MB",
+    publisher: "Rogue Waves",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/2096cdfd-0240-4445-8e54-0abec4b400b5.webp",
+      "https://youtu.be/pGNMaSE5E_o"
+    ],
+    tags: ["kawaii", "UI", "sound fx", "cute", "button", "click", "casual", "interface", "audio", "SFX"],
+    features: ["귀엽고 아기자기한 카와이 UI 사운드 팩", "버튼 클릭·팝업·알림 사운드", "아기자기한 인터페이스 효과음", "캐주얼·힐링 게임 UI에 적합"],
+    updatedAt: "2024-02-02",
+    link: "https://assetstore.unity.com/packages/audio/sound-fx/kawaii-ui-275279",
+  },
+
+  {
     mainCategory: "2D",
     subCategory: "텍스처 및 소재",
     name: "2D Bullet Lasers",
