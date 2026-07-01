@@ -32,6 +32,61 @@ const CATEGORY_MAP = {
 
 const ASSETS = [
   {
+    mainCategory: "2D",
+    subCategory: "주변환경",
+    name: "Pixel Mine Pack",
+    desc: "픽셀아트 스타일의 광산(광산 갱도) 테마 2D 에셋 팩. 광석·바위·갱도 타일과 채굴 관련 스프라이트를 제공해 2D 채굴·샌드박스·플랫포머 게임에 활용할 수 있다.",
+    packageVersion: "1.0",
+    unityVersion: "2020.1.3",
+    renderPipeline: [],
+    size: "6.9 MB",
+    publisher: "Killer Rabbit Media",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/47bd513b-fe36-4163-a862-9536d0489e35.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2fe8a090-416a-481b-9c82-f85b94ede0d6.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1adf1b73-547a-4cf2-ab21-aaeeabafb280.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/fa5b8510-9fae-4186-bf9e-ab96fa0281f9.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8e97a8a8-d2a5-42b1-8afb-2b4121e2d4ef.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/25e90361-7c5c-4ff4-a6e5-91dccae54e60.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/965302da-0e3d-4c13-951f-3eb9d3d51ca1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f38e1fbc-bc3d-4e13-bcbf-ca37a0d61160.webp"
+    ],
+    tags: ["pixel art", "mine", "mining", "2D", "tileset", "cave", "sprite", "ore", "platformer", "sandbox"],
+    features: ["픽셀아트 스타일 광산 테마 2D 팩", "광석·바위·갱도 타일 스프라이트", "채굴 관련 오브젝트 제공", "2D 채굴·샌드박스 게임에 적합"],
+    updatedAt: "2020-09-30",
+    link: "https://assetstore.unity.com/packages/2d/pixel-mine-pack-180012",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "식물",
+    name: "KyleLevin's Farm PackA1 2024",
+    desc: "로우폴리 툰 스타일의 농장 테마 3D 에셋 팩. 토마토·마늘·가지·밀 등 농작물과 헛간·농장 트럭·건초더미 등 농장 소품을 제공해 캐주얼 농장·타이쿤 게임에 활용할 수 있다.",
+    packageVersion: "1.1",
+    unityVersion: "5.3.2",
+    renderPipeline: [],
+    size: "19.8 MB",
+    publisher: "Kristian De Leon",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/6c1b8cfb-da68-4b53-9e10-212727d2ba81.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/9bd5d3fd-d6a0-4820-8fdc-84546a60688a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/ba851a45-b0cf-4758-aa41-acb4bb96e991.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/bb677a6e-b912-4c2c-a396-3f58bb2c01c2.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/5728a09d-af7f-4381-aadf-e8642f88a5de.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b5e86b49-3dd4-4e51-b982-7a17f20919f7.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/af331342-b520-49c5-8a05-5c5f4a2b0471.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b7df36f8-aaba-425c-8ae5-5cc54681b29e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7250e447-c3f7-4d1c-b147-5d806a5a0724.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/130ddf9b-66ba-42ba-9480-efb12e88f9c5.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/80e41936-b508-40d3-9a13-be17728d6890.webp"
+    ],
+    tags: ["farm pack", "garlic", "Farm crops", "Tomatoes", "Farm Truck", "pineapple", "Toon Farm", "eggplant", "Low Poly", "Hay stack", "crops", "barn", "barn house", "Fram Package", "wheat", "KL"],
+    features: ["로우폴리 툰 스타일 농장 테마 3D 팩", "토마토·마늘·가지·밀 등 농작물", "헛간·농장 트럭·건초더미 등 소품", "캐주얼 농장·타이쿤 게임에 적합"],
+    updatedAt: "2024-10-29",
+    link: "https://assetstore.unity.com/packages/3d/vegetation/kylelevin-s-farm-packa1-2024-71421",
+  },
+
+  {
     mainCategory: "음향",
     subCategory: "효과음",
     name: "Kawaii UI",
@@ -7170,77 +7225,6 @@ const ASSETS = [
   },
 
   {
-    "name": "KyleLevin's Farm PackA1 2024",
-    "packageVersion": "1.1",
-    "unityVersion": "5.3.2",
-    "size": "19.8 MB",
-    "updatedAt": "2024-10-29",
-    "publisher": "Kristian De Leon",
-    "mainCategory": "3D",
-    "subCategory": "식물",
-    "renderPipeline": [
-      "Built-in",
-      "URP",
-      "HDRP"
-    ],
-    "tags": [
-      "farm pack",
-      "garlic",
-      "Farm crops",
-      "Tomatoes",
-      "Farm Truck",
-      "pineapple",
-      "Toon Farm",
-      "eggplant",
-      "Low Poly",
-      "Hay stack",
-      "crops",
-      "barn",
-      "barn house",
-      "Fram Package",
-      "wheat"
-    ],
-    "features": [
-      "Note: This package contains 3D models, prefab of each models and a color texture.",
-      "Number of textures : 1 color texture",
-      "Texture dimensions: 4096 x 4096 (1)",
-      "Polygon count average:",
-      "Barnhouse (3x) = 300 - 1000 vertices",
-      "BurlapSack (3x) = 90 - 300 vertices",
-      "Cabbage (6x) = 100 - 200 vertices",
-      "Carrot (6x) = 98 - 100 vertices",
-      "Corn (6x) = 70 - 200 vertices",
-      "Crate (5x) = 8 - 200 vertices",
-      "CropBasket (1x) = 45 vertices",
-      "Eggplant 6x = 300 - 400 vertices",
-      "FarmFence (6x) = 30 - 40 vertices",
-      "FarmPlot (2x) = 30 - 40 vertices",
-      "FarmTruck (2x) = 500 - 600 vertices",
-      "Garlic (6x) = 200 - 500 vertices",
-      "HayStackA1_01 (3x) = 40 - 300 vertices",
-      "Modular Terrain (6x) = 4 - 15 vertices",
-      "OilBarrel 6x = 50 -200 vertices",
-      "Onion (6x) = 200 - 500 vertices",
-      "Pineapple (6x) = 200 -300 vertices",
-      "Potato (6x) = 200 - 800 vertices",
-      "Pumpkin (6x) = 100 - 400 vertices"
-    ],
-    "images": [
-      "https://assetstorev1-prd-cdn.unity3d.com/key-image/6c1b8cfb-da68-4b53-9e10-212727d2ba81.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/9bd5d3fd-d6a0-4820-8fdc-84546a60688a.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/ba851a45-b0cf-4758-aa41-acb4bb96e991.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/bb677a6e-b912-4c2c-a396-3f58bb2c01c2.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/5728a09d-af7f-4381-aadf-e8642f88a5de.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b5e86b49-3dd4-4e51-b982-7a17f20919f7.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/af331342-b520-49c5-8a05-5c5f4a2b0471.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b7df36f8-aaba-425c-8ae5-5cc54681b29e.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7250e447-c3f7-4d1c-b147-5d806a5a0724.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/130ddf9b-66ba-42ba-9480-efb12e88f9c5.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/80e41936-b508-40d3-9a13-be17728d6890.webp"
-    ]
-  },
-
-  {
     mainCategory: "3D",
     subCategory: "도시",
     name: "Low Poly Japanese Housing Complex",
@@ -11560,34 +11544,6 @@ const ASSETS = [
     ],
     updatedAt: "2025-06-20",
     link: "https://assetstore.unity.com/packages/vfx/particles/pixel-art-particles-pack-129939",
-  },
-
-  {
-    mainCategory: "2D",
-    subCategory: "주변환경",
-    name: "Pixel Mine Pack",
-    desc: "픽셀아트 스타일의 광산/동굴 테마 2D 에셋 팩으로, 광산 환경 제작을 위한 스프라이트를 제공합니다.",
-    packageVersion: "1.0",
-    unityVersion: "2020.1.3",
-    renderPipeline: [],
-    size: "6.9 MB",
-    publisher: "Killer Rabbit Media",
-    images: [
-      "https://assetstorev1-prd-cdn.unity3d.com/key-image/47bd513b-fe36-4163-a862-9536d0489e35.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2fe8a090-416a-481b-9c82-f85b94ede0d6.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1adf1b73-547a-4cf2-ab21-aaeeabafb280.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/fa5b8510-9fae-4186-bf9e-ab96fa0281f9.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8e97a8a8-d2a5-42b1-8afb-2b4121e2d4ef.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/25e90361-7c5c-4ff4-a6e5-91dccae54e60.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/965302da-0e3d-4c13-951f-3eb9d3d51ca1.webp",
-      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f38e1fbc-bc3d-4e13-bcbf-ca37a0d61160.webp"
-    ],
-    tags: [],
-    features: [
-      "픽셀아트 광산/동굴 테마 2D 에셋 팩"
-    ],
-    updatedAt: "2020-09-30",
-    link: "https://assetstore.unity.com/packages/2d/pixel-mine-pack-180012",
   },
 
   {
