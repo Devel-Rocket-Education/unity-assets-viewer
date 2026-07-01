@@ -6366,7 +6366,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "동물",
+    subCategory: "캐릭터",
     name: "Animated Low Poly Animals Pack | Wolf, Horse, Shark & More",
     desc: "Backrock Studios의 애니메이션 로우폴리 동물 팩. 늑대·말·상어 등 육상·해양 동물을 60종 이상의 변형으로 제공하는 로우폴리 3D 동물 캐릭터 모음이다.",
     packageVersion: "1.0",
