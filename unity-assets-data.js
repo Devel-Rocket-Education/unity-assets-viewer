@@ -1,3 +1,12 @@
+// ═══════════════════════════════════════════════════════════════
+//  Unity Assets Data  —  원본 · 유일한 진실 소스(Single Source of Truth)
+//  Version : 1.0
+//  Updated : 2026-07-02
+//  Assets  : 594
+//  ─ 이 파일만 직접 수정한다. 수정 후 반드시 재생성 → node tools/build-search-index.js
+//  ─ 파생물(직접 수정 금지): search-index.jsonl / search-index.meta.json
+// ═══════════════════════════════════════════════════════════════
+
 // ── 카테고리 구조 ──────────────────────────────────────────────
 // 새 대분류나 소분류를 추가할 때 여기도 함께 업데이트하세요.
 const CATEGORY_MAP = {
@@ -6201,7 +6210,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "휴머노이드",
+    subCategory: "캐릭터",
     name: "3D Characters Pro - Casual",
     desc: "LAYERLAB의 3D Characters Pro - Casual. 일상 캐주얼 콘셉트의 로우폴리 휴머노이드 3D 캐릭터 팩으로, 어드벤처·롤플레잉 등 다양한 게임에 활용할 수 있는 캐릭터 모델과 애니메이션을 제공한다.",
     packageVersion: "1.0.2",
@@ -6582,7 +6591,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "가구",
+    subCategory: "소품",
     name: "Beige Towel",
     desc: "SouthStudio의 Beige Towel. 베이지색 수건 로우폴리 3D 모델로, 모바일·AR/VR에 바로 쓸 수 있는 인테리어·아키비즈용 소품이다.",
     packageVersion: "2.0",
@@ -6658,7 +6667,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "도시",
+    subCategory: "주변환경",
     name: "City Builder: London",
     desc: "ReversedInt의 City Builder: London. 런던 스타일 도시를 빠르게 구성할 수 있는 고품질 도시 환경 팩으로, 도시 생성 프리팹과 상점 간판 프리팹, 인테리어 매핑 셰이더를 제공한다.",
     packageVersion: "1.31",
@@ -6692,7 +6701,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "인테리어",
+    subCategory: "주변환경",
     name: "Cute Classroom Set",
     desc: "Kana-Beru의 Cute Classroom Set. 일본 중학교 교실을 모티프로 한 귀여운 로우폴리 교실 소품 세트로, 하이퍼캐주얼 게임에 빠르게 적용할 수 있다.",
     packageVersion: "1.0",
@@ -6811,7 +6820,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "로봇",
+    subCategory: "캐릭터",
     name: "Emo Robot 03",
     desc: "GrigoriyArx의 Emo Robot 03. 귀여운 SF 안드로이드 로봇 캐릭터로, 10가지 표정 애니메이션과 데모 씬, URP 패키지를 포함한다.",
     packageVersion: "1.0",
@@ -6875,7 +6884,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "크리처",
+    subCategory: "캐릭터",
     name: "Fire Gazer",
     desc: "SURIYUN의 Fire Gazer. 용암·마그마 콘셉트의 SD 스타일 화염 안구 몬스터 크리처로, MMORPG·로그라이크 등에 어울리는 로우폴리 캐릭터다.",
     packageVersion: "3.1",
@@ -7188,7 +7197,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "인테리어",
+    subCategory: "주변환경",
     name: "Kindergarten Interior",
     desc: "3D Everything의 Kindergarten Interior. 유치원 실내를 구성하는 가구·아동용 소품 53종으로, 장난감·그림·카펫·선반·책·크레용·공 등이 포함되며 모두 로우폴리로 게임·앱과 VR에 적합하다.",
     packageVersion: "1.3",
@@ -7226,7 +7235,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "도시",
+    subCategory: "주변환경",
     name: "Low Poly Japanese Housing Complex",
     desc: "SbbUtutuya의 Low Poly Japanese Housing Complex. 일본식 주택 단지를 구성할 수 있는 로우폴리 도시 환경 팩으로, FBX 메시 505개와 프리팹 523개, 소재 7종을 제공한다.",
     packageVersion: "1.0",
@@ -7504,7 +7513,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "도시",
+    subCategory: "주변환경",
     name: "NewGen: Urban",
     desc: "ReversedInt의 NewGen: Urban. 뉴욕 스타일로 제작된 고품질 도시 환경 에셋으로, 마천루·공원·도로 등으로 빠르게 도시를 구성할 수 있으며 주야간 샘플 씬을 포함한다.",
     packageVersion: "1.1.0",
@@ -7539,7 +7548,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "휴머노이드",
+    subCategory: "캐릭터",
     name: "Nutcracker Christmas Toon Series",
     desc: "Meshtint Studio의 Nutcracker Christmas Toon Series. 박시한 로우폴리 툰 스타일의 호두까기 인형 크리스마스 캐릭터로, Unity 휴머노이드 메카님에 대응해 다른 휴머노이드 애니메이션을 공유할 수 있다.",
     packageVersion: "1.0",
@@ -7737,7 +7746,7 @@ const ASSETS = [
     "updatedAt": "2022-10-17",
     "publisher": "Aligned Games",
     "mainCategory": "3D",
-    "subCategory": "풍경",
+    "subCategory": "식물",
     "renderPipeline": [
       "Built-in",
       "URP",
@@ -8091,7 +8100,7 @@ const ASSETS = [
 
   {
     mainCategory: "3D",
-    subCategory: "휴머노이드",
+    subCategory: "캐릭터",
     name: "Street of Musicians",
     desc: "BlueCat의 Street of Musicians. 거리 음악가 테마의 로우폴리 3D 캐릭터·배경 에셋 팩으로, 애니메이션이 포함된 캐릭터 10종과 배경 에셋 24종, 데모 씬과 NavMesh를 제공한다.",
     packageVersion: "2.0",
@@ -8130,7 +8139,7 @@ const ASSETS = [
     "updatedAt": "2024-06-06",
     "publisher": "lowpoly89",
     "mainCategory": "3D",
-    "subCategory": "역사적 건조물",
+    "subCategory": "소품",
     "renderPipeline": [
       "Built-in"
     ],
