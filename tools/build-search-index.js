@@ -72,7 +72,7 @@ const lines = ASSETS.map((a, i) =>
     tags: a.tags,
     desc: a.desc,
     features: a.features,
-    link: a.link,
+    link: a.link || "#", // 원본에 link가 없는 에셋은 "#"으로 정규화(항상 존재 보장)
   })
 );
 
@@ -115,3 +115,5 @@ if (issues.length) {
 } else {
   console.log("검증: 이상 없음");
 }
+const noLink = ASSETS.filter((a) => !a.link).length;
+if (noLink) console.log(`ℹ link 없는 에셋 ${noLink}건 → 인덱스에서 "#"으로 정규화됨`);

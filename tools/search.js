@@ -123,9 +123,10 @@ if (asJson) {
   shown.forEach((x, i) => {
     const rp = x.r.rp && x.r.rp.length ? x.r.rp.join("/") : "(미표기)";
     const desc = (x.r.desc || "").length > 110 ? x.r.desc.slice(0, 110) + "…" : x.r.desc || "";
+    const link = x.r.link && x.r.link !== "#" ? x.r.link : "(스토어 링크 없음)";
     console.log(`[${i + 1}] ${x.r.name}   ★${x.score}`);
     console.log(`    ${x.r.main} / ${x.r.sub} · RP:${rp} · Unity ${x.r.unity} · ${x.r.publisher} · ${x.r.size}`);
-    console.log(`    링크: ${x.r.link}`);
+    console.log(`    링크: ${link}`);
     console.log(`    설명: ${desc}`);
     console.log(`    매칭: ${x.matched.join(", ")}`);
     console.log("");

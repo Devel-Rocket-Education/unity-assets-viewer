@@ -78,7 +78,8 @@ node tools/search.js [옵션] "조건1" "조건2" ...
   - 스타일: `"pixel|픽셀"`, `"low.?poly|로우폴리|lowpoly"`, `"toon|툰|카툰|cartoon"`, `"cyberpunk|사이버펑크"`
   - 타입: `"character|캐릭터"`, `"tileset|타일셋|tilemap"`, `"music|음악|배경음|bgm"`, `"particle|파티클|vfx|이펙트"`
 - 필터 옵션: `--main <2D|3D|시각 효과|음향>`, `--rp <Built-in|URP|HDRP>`, `--unity <2021 등 부분일치>`, `--limit <N>`
-- 결과가 0개면 `--any`(그룹 간 OR)로 넓히거나 동의어를 추가한다.
+  - **대분류 값에 공백이 있으면 따옴표로 감싼다**: `--main "시각 효과"`
+- **조건을 너무 좁히지 마라.** 그룹을 3개 이상 AND로 걸면 핵심 에셋이 키워드를 `desc`에만 가져(1점) 누락될 수 있다. 결과가 0~2개로 적으면 **마지막 그룹을 빼거나 `--any`(그룹 간 OR)로 다시 검색**하고, 동의어도 넓혀라.
 - 결과를 프로그램적으로 다뤄야 하면 `--json`을 붙인다.
 
 예)
@@ -86,9 +87,10 @@ node tools/search.js [옵션] "조건1" "조건2" ...
 node tools/search.js "pixel|픽셀" "dungeon|던전|광산|cave" --main 2D
 node tools/search.js "low.?poly|로우폴리" "character|캐릭터" --rp URP --limit 5
 node tools/search.js "music|음악|배경음|bgm|loop" --main 음향
+node tools/search.js "toon|툰|카툰|cartoon" "particle|파티클|vfx|이펙트" --main "시각 효과"
 ```
 
-> 출력의 `★N`은 매칭 점수(높을수록 조건에 잘 맞음). name/태그 매칭은 2점, 설명/features 매칭은 1점.
+> 출력의 `★N`은 매칭 점수(높을수록 조건에 잘 맞음). name/태그 매칭은 2점, 설명/features 매칭은 1점. **점수가 같으면 최신 갱신일(`updated`) 순**으로 정렬된다.
 > 특수 조건(정확한 제작사명 등)으로 좁혀야 할 때만 보조로 grep을 써도 되지만, 기본은 이 CLI다.
 
 ### 3) 결과 정리·추천
