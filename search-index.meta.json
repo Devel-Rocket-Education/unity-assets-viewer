@@ -1,0 +1,41 @@
+{
+  "_comment": "파생물(직접 수정 금지). 원본 unity-assets-data.js 에서 tools/build-search-index.js 로 재생성.",
+  "sourceVersion": "1.0",
+  "sourceUpdated": "2026-07-02",
+  "generatedAt": "2026-07-02T02:38:48.954Z",
+  "totalAssets": 594,
+  "categoryMap": {
+    "2D": [
+      "GUI",
+      "글꼴",
+      "주변환경",
+      "캐릭터",
+      "텍스처 및 소재"
+    ],
+    "3D": [
+      "GUI",
+      "소품",
+      "식물",
+      "애니메이션",
+      "운송도구",
+      "주변환경",
+      "캐릭터"
+    ],
+    "시각 효과": [
+      "셰이더",
+      "파티클"
+    ],
+    "음향": [
+      "음악",
+      "환경소리",
+      "효과음"
+    ]
+  },
+  "countsByMain": {
+    "2D": 161,
+    "3D": 287,
+    "시각 효과": 97,
+    "음향": 49
+  },
+  "validationIssues": []
+}
