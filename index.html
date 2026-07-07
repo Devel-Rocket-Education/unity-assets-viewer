@@ -633,7 +633,8 @@ const sortSelect  = document.getElementById("sortSelect");
 function buildCats() {
   // 대분류
   mainCatBar.innerHTML = "";
-  const allMainCount = ASSETS.length;
+  const searched = ASSETS.filter(matchesSearch);
+  const allMainCount = searched.length;
   const mkMain = (label, count) => {
     const btn = document.createElement("button");
     btn.className = "cat-btn" + (label === activeMain ? " active" : "");
@@ -650,7 +651,7 @@ function buildCats() {
 
   mkMain("전체", allMainCount);
   MAIN_CATS.forEach(m => {
-    mkMain(m, ASSETS.filter(a => a.mainCategory === m).length);
+    mkMain(m, searched.filter(a => a.mainCategory === m).length);
   });
 
   // 소분류 (대분류가 선택된 경우만 표시)
@@ -675,20 +676,24 @@ function buildCats() {
     subCatBar.appendChild(btn);
   };
 
-  mkSub("전체", ASSETS.filter(a => a.mainCategory === activeMain).length);
+  mkSub("전체", searched.filter(a => a.mainCategory === activeMain).length);
   subs.forEach(s => {
-    mkSub(s, ASSETS.filter(a => a.mainCategory === activeMain && a.subCategory === s).length);
+    mkSub(s, searched.filter(a => a.mainCategory === activeMain && a.subCategory === s).length);
   });
+}
+
+// ── 검색어 매칭 ───────────────────────────────────────────────
+function matchesSearch(a) {
+  const q = searchQuery.toLowerCase();
+  return !q || a.name.toLowerCase().includes(q) || a.publisher.toLowerCase().includes(q) || a.tags.some(t => t.toLowerCase().includes(q));
 }
 
 // ── 필터 + 정렬 ───────────────────────────────────────────────
 function getFiltered() {
-  const q = searchQuery.toLowerCase();
   let list = ASSETS.filter(a => {
     const matchMain   = activeMain === "전체" || a.mainCategory === activeMain;
     const matchSub    = activeSub  === "전체" || a.subCategory  === activeSub;
-    const matchSearch = !q || a.name.toLowerCase().includes(q) || a.publisher.toLowerCase().includes(q) || a.tags.some(t => t.toLowerCase().includes(q));
-    return matchMain && matchSub && matchSearch;
+    return matchMain && matchSub && matchesSearch(a);
   });
 
   const parseSize = s => {
