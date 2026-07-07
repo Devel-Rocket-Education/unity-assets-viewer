@@ -33,6 +33,98 @@ const CATEGORY_MAP = {
 const ASSETS = [
   {
     mainCategory: "2D",
+    subCategory: "캐릭터",
+    name: "2D 픽셀 아트 SF 번들",
+    desc: "SF 테마의 2D 픽셀아트 통합 번들. 애니메이션 캐릭터·로봇·SF 무기·스킬 이펙트·모듈형 환경·UI까지 SF 게임 제작에 필요한 픽셀 에셋을 한 번에 제공하는 스타터 킷이다.",
+    packageVersion: "1.0",
+    unityVersion: "2022.3.62",
+    renderPipeline: [],
+    size: "23.3 MB",
+    publisher: "Barely Apes",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/007fabb1-c883-4d8d-90cc-e3e51dc76f97.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/3441c94b-e6f6-4b72-a927-1cd170f429d8.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/cd85f9b0-eb04-4b92-95ad-29a7f5c81393.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4b89a3f1-7d4f-4dd2-b1e5-ad22bdeebb94.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/b289bbe6-ced9-4727-aefd-d1313ea84ca8.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/fdd3de07-ad0d-4d9d-8368-c555813a600e.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/66aece43-9bef-4651-b331-586d01a31edb.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/9d7fc713-ae2a-4802-9b0f-de40cb8ad666.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/6b1e7476-9d9d-421c-826a-2318daf632b1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f228acb4-6bb3-4d1e-b495-f473dca7da26.webp"
+    ],
+    tags: ["complete", "Starter Kit", "robots", "scifi weapons", "UI", "animated 2d character", "2D Assets", "2D Pixel Art", "Modular Kit", "retro", "skills", "bundle", "GUI", "Modular environment", "BA"],
+    features: ["SF 테마 2D 픽셀아트 통합 번들", "캐릭터·로봇·SF 무기·스킬 이펙트", "모듈형 환경·UI 포함", "SF 게임 제작 스타터 킷"],
+    updatedAt: "2026-06-13",
+    link: "https://assetstore.unity.com/packages/2d/2d-pixel-art-sci-fi-bundle-379476",
+  },
+
+  {
+    mainCategory: "음향",
+    subCategory: "효과음",
+    name: "Sci-Fi Mining Equipment Sound Effects Pack",
+    desc: "SF 채굴 장비 테마의 효과음 팩. 드릴·굴착기·레이저 채굴기 등 미래형 광산 장비의 기계·작동음을 고품질로 제공해 SF·우주 채굴 게임에 활용할 수 있다.",
+    packageVersion: "1.0",
+    unityVersion: "2021.3.34",
+    renderPipeline: [],
+    size: "10.1 MB",
+    publisher: "Stormwave Audio",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/7d9ba931-a809-4bed-8b56-9f2a6a6d3ef4.webp",
+      "https://youtu.be/Gl4RyKNq0Wg"
+    ],
+    tags: ["sci-fi", "mining", "sound fx", "equipment", "drill", "machine", "futuristic", "audio", "industrial", "SFX"],
+    features: ["SF 채굴 장비 테마 효과음 팩", "드릴·굴착기·레이저 채굴기 작동음", "미래형 광산 장비 기계음", "SF·우주 채굴 게임에 적합"],
+    updatedAt: "2025-05-21",
+    link: "https://assetstore.unity.com/packages/audio/sound-fx/sci-fi-mining-equipment-sound-effects-pack-195353",
+  },
+
+  {
+    mainCategory: "시각 효과",
+    subCategory: "파티클",
+    name: "Pixel Art Particle System Pack",
+    desc: "픽셀아트 스타일의 파티클 이펙트 팩. 연기·폭발·불·수리검 등 레트로 픽셀 감성의 파티클 시스템을 제공해 2D 픽셀 게임의 시각 효과로 활용할 수 있다.",
+    packageVersion: "1.1",
+    unityVersion: "5.5.0",
+    renderPipeline: [],
+    size: "637.1 KB",
+    publisher: "Jesús González",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/76e2ec5c-e3ae-4232-9b7a-18204eb8e7bf.webp",
+      "https://youtu.be/0LVMokb82yg",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/bac21d4d-414e-43d2-ab1e-9671ea3546a1.webp"
+    ],
+    tags: ["FX", "Effects", "smoke", "Explosion", "Fire", "particle system", "shuriken", "Pixel Art", "particles"],
+    features: ["픽셀아트 스타일 파티클 이펙트 팩", "연기·폭발·불·수리검 이펙트", "레트로 픽셀 감성 파티클 시스템", "2D 픽셀 게임 시각 효과에 적합"],
+    updatedAt: "2018-01-18",
+    link: "https://assetstore.unity.com/packages/vfx/particles/pixel-art-particle-system-pack-80249",
+  },
+
+  {
+    mainCategory: "2D",
+    subCategory: "GUI",
+    name: "Sci Fi Pixel Art UI Kit",
+    desc: "SF 테마의 픽셀아트 UI 키트. 버튼·토글·슬라이더·체력바·스케일 가능한 패널·아이콘 등 레트로 픽셀 스타일의 UI 요소를 제공해 SF·레트로 게임 인터페이스를 구성할 수 있다.",
+    packageVersion: "1.0",
+    unityVersion: "2019.2.0",
+    renderPipeline: [],
+    size: "550.5 KB",
+    publisher: "Jack Tolmachoff Design",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/1e2114c1-9142-44f1-8492-7cc1facc6df4.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/e859d507-3667-47d2-9938-1eaaf1ec90e9.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/0b114875-0587-47d2-9938-1eaaf1ec90e9.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/e58d0bdf-5443-48b4-b7eb-8c257e7f601d.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7762eb63-3b54-495d-b032-e9cafe18e1e1.webp"
+    ],
+    tags: ["controls", "GUI", "Toggles", "sliders", "Health Bars", "Scalable Panels", "icons", "buttons", "retro style", "Pixel Art", "UI"],
+    features: ["SF 테마 픽셀아트 UI 키트", "버튼·토글·슬라이더·체력바 UI 요소", "스케일 가능한 패널·아이콘", "SF·레트로 게임 인터페이스에 적합"],
+    updatedAt: "2020-05-05",
+    link: "https://assetstore.unity.com/packages/2d/gui/icons/sci-fi-pixel-art-ui-kit-166846",
+  },
+
+  {
+    mainCategory: "2D",
     subCategory: "주변환경",
     name: "Pixel Mine Pack",
     desc: "픽셀아트 스타일의 광산(광산 갱도) 테마 2D 에셋 팩. 광석·바위·갱도 타일과 채굴 관련 스프라이트를 제공해 2D 채굴·샌드박스·플랫포머 게임에 활용할 수 있다.",
