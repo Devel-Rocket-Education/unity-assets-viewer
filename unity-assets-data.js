@@ -33,6 +33,238 @@ const CATEGORY_MAP = {
 const ASSETS = [
   {
     mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Knight Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 기사 전사 애니메이션 팩. 검과 방패를 든 공격·방어·이동·회피 등 중장갑 기사 전투 모션을 제공해 중세 판타지 RPG에 활용할 수 있다.",
+    packageVersion: "2.7.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "6.8 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/74190425-3b4c-41d5-a409-5525b882f128.webp",
+      "https://youtu.be/oe2s_Bc-YhU"
+    ],
+    tags: ["mecanim", "animation", "knight", "sword", "shield", "warrior", "RPG", "humanoid", "character", "medieval"],
+    features: ["메카님 기반 기사 전사 애니메이션 팩", "검과 방패 공격·방어 모션", "이동·회피 애니메이션 포함", "중세 판타지 RPG 기사 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/knight-warrior-mecanim-animation-pack-38814",
+  },
+  
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Spearman Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 창병 전사 애니메이션 팩. 창 찌르기·휘두르기·방어·이동 등 장병기 전투 모션을 제공해 중세 판타지 RPG의 창병 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.2.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "5.9 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/7ec3d0a7-456d-404b-bfea-9b090ad26de3.webp",
+      "https://youtu.be/71qUDCaHr7k"
+    ],
+    tags: ["mecanim", "animation", "spearman", "spear", "warrior", "RPG", "humanoid", "character", "combat", "3D"],
+    features: ["메카님 기반 창병 전사 애니메이션 팩", "창 찌르기·휘두르기 모션", "방어·이동 애니메이션 포함", "중세 판타지 RPG 창병에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/spearman-warrior-mecanim-animation-pack-46399",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Sorceress Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 여성 마법사(소서리스) 애니메이션 팩. 주문 시전·마법 공격·이동·회피 등 마법 전투 모션을 제공해 판타지 RPG의 마법사 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.8.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "8.0 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/dbfb3adb-0d30-4404-bc20-29aa15328da6.webp",
+      "https://youtu.be/6mWwXVOdg28",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/bf1934b9-563d-4024-8b16-3fe990928463.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/6221f535-e7af-46b8-9143-4e94d4a53bb0.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7c84f2bd-d133-481c-be84-74c6eca1cd45.webp"
+    ],
+    tags: ["mecanim", "animation", "sorceress", "mage", "spell", "RPG", "humanoid", "character", "magic", "3D"],
+    features: ["메카님 기반 여성 마법사 애니메이션 팩", "주문 시전·마법 공격 모션", "이동·회피 애니메이션 포함", "판타지 RPG 마법사 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/sorceress-warrior-mecanim-animation-pack-35814",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Swordsman Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 검사 전사 애니메이션 팩. 한손검 베기·찌르기·방어·회피·이동 등 검술 전투 모션을 제공해 RPG·액션 게임의 검사 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.3.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "5.8 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/88cd05c6-4b35-4046-bcfa-be3735566187.webp",
+      "https://youtu.be/XqQ7YJVfcY8"
+    ],
+    tags: ["mecanim", "animation", "swordsman", "sword", "warrior", "RPG", "humanoid", "character", "combat", "3D"],
+    features: ["메카님 기반 검사 전사 애니메이션 팩", "한손검 베기·찌르기 모션", "방어·회피·이동 애니메이션", "RPG·액션 게임 검사 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/swordsman-warrior-mecanim-animation-pack-43153",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Ninja Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 닌자 전사 애니메이션 팩. 은신·암살·검술 공격·회피·이동 등 닌자 특유의 민첩한 전투 모션을 제공해 액션·어드벤처 게임에 활용할 수 있다.",
+    packageVersion: "3.2.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "10.1 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/82de9d08-586b-46f7-a2ee-04fb1289697c.webp",
+      "https://youtu.be/CMnFE7enWek",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/fe856733-dfda-483e-aa8a-5f24c47a9bff.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/13b8ada7-84b3-46d1-9113-e23b3b645038.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4d81865a-2b8e-440f-9fb8-0c60b53fb0d6.webp"
+    ],
+    tags: ["Weapon", "Gamepad", "fight", "RPG", "Action", "combat", "Character", "Mecanim", "xbox", "Adventure", "warrior", "Controller", "stealth", "ninja", "assassain"],
+    features: ["메카님 기반 닌자 전사 애니메이션 팩", "은신·암살·검술 공격 모션", "민첩한 회피·이동 애니메이션", "액션·어드벤처 게임에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/ninja-warrior-mecanim-animation-pack-35307",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Karate Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 가라테 전사 애니메이션 팩. 주먹·발차기·콤보·방어·회피 등 맨손 격투 모션을 제공해 격투·액션 게임의 무술 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.6.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "6.4 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/da096a85-2d7e-46c3-b16e-6b750ff99658.webp",
+      "https://youtu.be/fmcxHwegWBI",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2863796a-6843-4ea0-882d-f747a5204d3a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/1b782bad-a6c1-4f04-8500-8aaf19308169.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/6b5e0b1f-aab4-41bb-929b-e2b8b89404a1.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4bb32485-042e-4d44-947e-9f56fdb1ebfd.webp"
+    ],
+    tags: ["mecanim", "animation", "karate", "martial arts", "warrior", "fighting", "humanoid", "character", "combat", "3D"],
+    features: ["메카님 기반 가라테 전사 애니메이션 팩", "주먹·발차기·콤보 격투 모션", "방어·회피 애니메이션 포함", "격투·액션 게임 무술 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/3d/animations/karate-warrior-mecanim-animation-pack-35101",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Hammer Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 해머 전사 애니메이션 팩. 대형 망치 내려치기·휘두르기·이동·회피 등 묵직한 근접 전투 모션을 제공해 RPG·액션 게임에 활용할 수 있다.",
+    packageVersion: "2.1.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "6.3 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/15f7a248-1a7e-4911-be93-58cdb2aad913.webp",
+      "https://youtu.be/lMijsRheUw4"
+    ],
+    tags: ["mecanim", "animation", "hammer", "warrior", "melee", "RPG", "humanoid", "character", "combat", "3D"],
+    features: ["메카님 기반 해머 전사 애니메이션 팩", "대형 망치 내려치기·휘두르기 모션", "이동·회피 애니메이션 포함", "RPG·액션 게임 전사 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/hammer-warrior-mecanim-animation-pack-46860",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Crossbow Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 석궁 전사 애니메이션 팩. 석궁 조준·발사·재장전·이동 등 원거리 전투 모션을 제공해 중세 판타지 RPG의 석궁병 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.1.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "5.8 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/09e881c3-df78-4618-93ce-b40db368c565.webp",
+      "https://youtu.be/GRqnrxVpsIM"
+    ],
+    tags: ["Fantasy", "Pack", "RPG", "warrior", "ranged", "Controller", "combat", "fighter", "Mecanim", "Medieval", "archer", "movement", "Character", "crossbow"],
+    features: ["메카님 기반 석궁 전사 애니메이션 팩", "석궁 조준·발사·재장전 모션", "이동·전투 애니메이션 포함", "중세 판타지 RPG 석궁병에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/crossbow-warrior-mecanim-animation-pack-47302",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Archer Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 궁수 전사 애니메이션 팩. 활 조준·발사·장전·이동·회피 등 원거리 전투 모션을 제공해 RPG·액션 게임의 궁수 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.2.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "5.9 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/0c7393be-e403-463b-a6b7-51944e55c169.webp",
+      "https://youtu.be/fxAA7iCALek",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/8ad5282f-5db8-4237-b226-800a822f99ad.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/cd9c6101-9b9a-40d8-83af-8fd9a9a4f298.webp"
+    ],
+    tags: ["mecanim", "animation", "archer", "bow", "warrior", "RPG", "humanoid", "character", "ranged", "3D"],
+    features: ["메카님 기반 궁수 전사 애니메이션 팩", "활 조준·발사·장전 모션", "이동·회피 애니메이션 포함", "RPG·액션 게임 궁수 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/3d/animations/archer-warrior-mecanim-animation-pack-41714",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "2-Handed Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 양손 무기 전사 애니메이션 팩. 양손검 공격·베기·회피·이동 등 근접 전투 모션을 제공해 RPG·액션 게임의 전사 캐릭터에 활용할 수 있다.",
+    packageVersion: "2.0.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "6.0 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/4fdc820d-83fc-4f2a-9095-61065d911414.webp",
+      "https://youtu.be/cGG8SwkBpu0"
+    ],
+    tags: ["Physics", "Weapon", "Controller", "Character", "Animation", "Mecanim", "Pack", "Gamepad", "warrior", "combat", "fight", "RPG", "Dodge", "Slash", "sword"],
+    features: ["메카님 기반 양손 무기 전사 애니메이션 팩", "양손검 공격·베기·회피 모션", "이동·전투 애니메이션 포함", "RPG·액션 게임 전사 캐릭터에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/p/2-handed-warrior-mecanim-animation-pack-42286",
+  },
+
+  {
+    mainCategory: "3D",
+    subCategory: "애니메이션",
+    name: "Mage Warrior Mecanim Animation Pack",
+    desc: "메카님 기반 마법사 전사 애니메이션 팩. 주문 시전·이동·공격·피격 등 마법사 캐릭터에 필요한 휴머노이드 애니메이션을 제공해 RPG·액션 게임에 활용할 수 있다.",
+    packageVersion: "2.4.1",
+    unityVersion: "2022.3.61",
+    renderPipeline: [],
+    size: "6.1 MB",
+    publisher: "Explosive",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/29287c08-27bf-4d38-a77e-ff86c0b100e5.webp",
+      "https://youtu.be/Fu_82mwgkgo"
+    ],
+    tags: ["mecanim", "animation", "mage", "warrior", "spell", "RPG", "humanoid", "character", "magic", "3D"],
+    features: ["메카님 기반 마법사 전사 애니메이션 팩", "주문 시전·이동·공격·피격 모션", "휴머노이드 리그 호환", "RPG·액션 게임에 적합"],
+    updatedAt: "2025-05-07",
+    link: "https://assetstore.unity.com/packages/3d/animations/mage-warrior-mecanim-animation-pack-39519",
+  },
+
+  {
+    mainCategory: "3D",
     subCategory: "소품",
     name: "Levers, Buttons and Switches",
     desc: "레버·버튼·스위치·다이얼·기폭장치 등 조작 장치 3D 소품 모음. 애니메이션과 스크립트가 포함되어 상호작용 가능한 스위치·버튼 오브젝트로 VR·모바일 게임에 활용할 수 있다.",
