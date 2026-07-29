@@ -33,6 +33,34 @@ const CATEGORY_MAP = {
 const ASSETS = [
   {
     mainCategory: "3D",
+    subCategory: "캐릭터",
+    name: "5 Stylized Low Poly Alien Characters (Mobile Ready)",
+    desc: "모바일에 최적화된 스타일라이즈드 로우폴리 외계인 캐릭터 5종. SF·우주 테마의 카툰풍 에일리언 캐릭터를 제공해 모바일·캐주얼 SF 게임에 활용할 수 있다.",
+    packageVersion: "1.0.0",
+    unityVersion: "2022.3.44",
+    renderPipeline: ["Built-in"],
+    size: "2.4 MB",
+    publisher: "Nechvolod3D",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/a0753353-81ec-4f6a-82ae-ec89be6807b6.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f0f74c10-355d-463f-b905-e27f3811db5a.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a0123fd3-7681-4345-9955-34be83867fa4.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/a249dc08-b6c3-46a0-9e28-2cd38884d51f.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/10959b70-863e-4207-a8de-2ce953554698.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/0862b18c-7872-44eb-b09b-65ee6b6acb46.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/32b2e0c9-9e86-40dd-ab44-d230a2ca0624.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7e13c6f0-0555-434a-b6c6-f521b4248122.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/957e26c9-53db-4d90-b347-9bcca13f85d0.webp",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/f9f58b38-610d-4ffd-b4b8-a4276a7708d1.webp"
+    ],
+    tags: ["Character", "low", "alien", "Sci-Fi", "Cartoon", "Game", "space", "Unity", "Fantasy", "lowpoly", "Environment"],
+    features: ["모바일 최적화 로우폴리 외계인 캐릭터 5종", "SF·우주 테마 카툰풍 에일리언", "모바일 렌더링에 적합한 경량 메시", "모바일·캐주얼 SF 게임에 적합"],
+    updatedAt: "2026-02-24",
+    link: "https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi/5-stylized-low-poly-alien-characters-mobile-ready-357096",
+  },
+  
+  {
+    mainCategory: "3D",
     subCategory: "주변환경",
     name: "POLYGON - Police Station Pack - Art by Synty",
     desc: "Synty의 로우폴리 카툰 스타일 경찰서 환경 팩. 경찰서 건물·유치장·경찰 캐릭터·차량·무기 등 모듈형 에셋을 포함해 현대 도시·범죄 테마의 게임 월드를 구성할 수 있다.",
