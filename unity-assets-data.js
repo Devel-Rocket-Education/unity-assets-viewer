@@ -24078,4 +24078,30 @@ const ASSETS = [
     updatedAt: "2023-02-14",
     link: "https://assetstore.unity.com/packages/2d/gui/cute-casual-gui-243506",
   },
+  {
+    mainCategory: "3D",
+    subCategory: "소품",
+    name: "Poly Tower Part1",
+    desc: "무선 통신탑(라디오 타워)과 증폭기(앰프)를 담은 로우폴리 지원형 타워 팩. 타워별 4단계 프리팹과 단일 머티리얼·텍스처 구성으로 타워디펜스 게임의 버프·지원 타워 요소를 손쉽게 구성할 수 있다.",
+    packageVersion: "1.0",
+    unityVersion: "2017.4.40",
+    renderPipeline: [],
+    size: "1.4 MB",
+    publisher: "Fatty War",
+    images: [
+      "https://assetstorev1-prd-cdn.unity3d.com/key-image/053edaca-093f-4cd0-8739-6b8ebd9943f1.webp",
+      "https://youtu.be/A1gO0Ex5JY0",
+      "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/0475ab4b-2b05-4728-8ce1-56e1aa32734b.webp"
+    ],
+    tags: ["lowpoly", "tower", "tower defense", "radio tower", "amplifier", "support", "polygon", "mobile"],
+    features: [
+      "라디오 타워·증폭기 등 지원형 타워 팩",
+      "타워별 4단계 업그레이드 (Small/Medium/Large/XL)",
+      "3가지 바디 컬러 (Blue/Red/Yellow)",
+      "단일 머티리얼·텍스처, 컬러별 UV 구성",
+      "Fatty Poly Turret & Tower 시리즈",
+    ],
+    updatedAt: "2021-01-18",
+    link: "https://assetstore.unity.com/packages/3d/props/weapons/poly-tower-part1-186853",
+  },
 ];
