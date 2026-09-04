@@ -13664,32 +13664,6 @@ const ASSETS = [
     link: "https://assetstore.unity.com/packages/2d/gui/icons/2d-computer-sprites-pixel-art-213408",
   },
 
-  {
-    mainCategory: "2D",
-    subCategory: "캐릭터",
-    name: "2D Dungeon Pixel Sprites (2D/ Half 2D)",
-    desc: "던전 RPG 스타일로 제작된 픽셀 스프라이트 모음으로, 게임에 바로 활용할 수 있는 캐릭터와 UI 스프라이트를 제공합니다.",
-    packageVersion: "1.0",
-    unityVersion: "2020.3.17",
-    renderPipeline: ["Built-in", "URP", "HDRP"],
-    size: "594.5 KB",
-    publisher: "Clockwork Knowledge",
-    images: [
-      "https://assetstorev1-prd-cdn.unity3d.com/key-image/7c09ca86-d7ba-4577-a016-5dfdb20f3e20.webp",
-      "https://assetstore.unity.com/player/627924cd051e887560ec7560",
-      "https://assetstore.unity.com/player/627924e42cadfb8dc1905e78",
-      "https://assetstore.unity.com/player/627924e8a6ddc2d4d696436f",
-      "https://assetstore.unity.com/player/627925fb237f67ccb679fa2e"
-    ],
-    tags: ["Character", "spritesheet", "2D", "UI", "Pixel", "dungeon", "Fantasy", "RPG"],
-    features: [
-      "던전 RPG 스타일에 맞춰 제작된 스프라이트 모음",
-      "캐릭터 및 UI용 픽셀 스프라이트 제공",
-      "Built-in/URP/HDRP 호환"
-    ],
-    updatedAt: "2022-05-14",
-    link: "https://assetstore.unity.com/packages/2d/2d-dungeon-pixel-sprites-2d-half-2d-221584",
-  },
 
   {
     mainCategory: "3D",
